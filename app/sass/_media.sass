@@ -1,0 +1,385 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .container
+    padding: 0 15px
+
+  .offers-box
+    width: 300px
+    font-size: 16px
+
+  .list-dots
+    font-size: 14px
+
+  .offers
+    padding: 70px 0
+
+  .clients-box
+    width: 140px
+    height: 52px
+    padding: 10px
+    img
+      height: 100%
+      width: 100%
+      object-fit: contain
+
+  .slick-prev
+    left: 0
+
+  .slick-next
+    right: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1120px)
+  .advantages-box
+    font-size: 16px
+    margin: 0 0 26px
+    p
+      max-width: 195px
+
+@media only screen and (max-width : 1060px)
+  .header-box
+    font-size: 14px
+    p
+      max-width: 165px
+
+  .main-image
+    width: 300px
+
+  .slick-dots
+    margin: 20px 0 0 0
+
+  .main-slider__title
+    font-size: 30px
+
+  .main-slider__content p
+    font-size: 18px
+    line-height: normal
+
+  .advantages-box__icon
+    width: 72px
+    min-width: 72px
+
+  .order-image
+    margin: 0
+
+@media only screen and (max-width : 992px)
+  .logo
+    font-size: 31.5px
+    span
+      &:last-child
+        font-size: 29px
+
+  .header-wrapper
+    padding: 0 0 0 10px
+
+  .main-slider
+    max-width: 400px
+
+  .offers-content
+    justify-content: space-around
+
+  .about-content
+    width: 100%
+    padding: 0
+
+  h1
+    font-size: 30px
+    margin: 0 0 20px
+
+  .about-image
+    margin: 30px auto 0
+
+  .about
+    margin: 0 0 57px
+
+  .tabs__caption li
+    width: 140px
+    height: 30px
+    font-size: 12px
+
+  .company-box
+    font-size: 18px
+
+  .advantages-content
+    justify-content: space-around
+
+  .advantages
+    margin: 0 0 8px
+    h2
+      margin: 0 auto 27px
+
+  .order-content
+    width: 550px
+
+  .order-image
+    width: 320px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 900px)
+  .order-image
+    display: none
+
+  .order-content
+    width: 100%
+    max-width: none
+    margin: 0 0 50px
+    p
+      max-width: none
+      font-size: 18px
+
+  .form
+    margin: 20px 0 0
+
+  label
+    width: 100%
+
+  .order
+    padding: 40px 0 0
+
+  textarea
+    height: 215px
+
+
+
+@media only screen and (max-width : 768px)
+  .btn-burger
+    display: block
+
+  .phone-mobile
+    display: flex
+
+  header
+    padding: 16px 0 15px
+    .container
+      position: static
+    .header-wrapper
+      display: none
+      position: absolute
+      left: 0
+      top: 79px
+      width: 100%
+      height: auto
+      background: #2c2c2c
+      z-index: 7
+      padding: 20px
+    .header-top
+      flex-direction: column
+      align-items: flex-start
+      order: 1
+      .header-box
+        margin: 0 0 20px
+        p
+          max-width: none
+        .links
+          font-size: 11px
+    .menu
+      flex-direction: column
+      align-items: flex-start
+      margin: 0 0 20px
+      li
+        margin: 0 0 10px
+
+  .main-image
+    width: 232px
+    margin: 0 -99px 0 0
+
+
+  h2
+    font-size: 24px
+
+  .stages
+    padding: 40px 0 0
+    h2
+      margin: 0 auto 20px
+
+  .tabs__content
+    padding: 30px 0 95px
+    position: relative
+    font-size: 14px
+    line-height: normal
+    .btn
+      position: absolute
+      left: 0
+      bottom: 40px
+      width: 290px
+      height: 45px
+      font-size: 15px
+    h3
+      margin: 0 0 8px
+      font-size: 24px
+
+  .tabs__content.active
+    flex-direction: column
+    align-items: flex-start
+
+  .tabs-text
+    max-width: none
+
+  .tabs-img
+    max-width: 290px
+    margin: 19px 0 0
+
+  .tabs__caption
+    flex-wrap: wrap
+    li
+      margin: 0 0 10px
+      &:last-child
+        width: 100%
+        margin: 0
+
+  .company
+    padding: 50px 0 10px
+    h2
+      margin: 0 auto 30px
+
+  .company-box
+    margin: 0 0 40px
+
+  .company-content
+    justify-content: space-around
+
+  .clients-slider
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: center
+    .slide
+      &:last-child
+        display: none
+
+  .clients-box
+    margin: 0 0 10px
+
+  .clients
+    padding: 40px 0 30px
+    h2
+      margin: 0 auto 30px
+
+  .contacts
+    padding: 284px 0 0
+
+  .box-contacts
+    width: 290px
+    height: 320px
+    padding: 35px 25px
+    margin: 0 auto -50px
+    .header-box
+      font-size: 14px
+    .btn
+      width: 100%
+      font-size: 18px
+    .header-box__icon
+      margin: 0 8px 0 0
+    h2
+      margin: 0 0 20px
+
+  .footer-top
+    padding: 82px 0 30px
+
+  footer
+    .logo
+      display: none
+
+    .header-wrapper
+      padding: 0
+    .header-top
+      flex-direction: column
+      justify-content: flex-start
+      margin: 0
+    .header-box
+      margin: 0 0 30px
+      &:first-child
+        margin: 0 0 30px
+
+@media only screen and (max-width : 575px)
+  .main-slider__content
+    p
+      display: none
+
+  .main-slider
+    max-width: 200px
+    &__title
+      margin: 0
+
+  .offers-box
+    font-size: 17px
+    margin: 0 0 20px
+
+  .offers-box__image
+    height: 149px
+
+  .block-hidden
+    padding: 12px
+
+  .list-dots
+    font-size: 18px
+
+  .offers
+    padding: 30px 0
+
+  h2
+    padding: 0 0 20px
+    margin: 0 0 20px
+
+  .btn-accent
+    width: 290px
+
+  h1
+    font-size: 20px
+
+  .about-image
+    width: 290px
+    height: 201px
+
+  .about
+    .description
+      font-size: 14px
+      line-height: normal
+      p
+        display: none
+        &:first-child
+          display: block
+    .links-details
+      display: block
+
+  .advantages-content
+    flex-direction: column
+    align-items: flex-start
+
+
+@media only screen and (max-width : 480px)
+  main
+    padding: 33px 0 0
+
+  .main-image
+    position: absolute
+    bottom: 0
+    right: -79px
+    margin: 0
+
+  .main-slider
+    padding: 0 0 200px
+
+  footer
+    .menu
+      justify-content: flex-start
+      li
+        width: 50%
+        margin: 0 0 23px
+        &:last-child
+          margin: 0
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 420px)
+  .tabs__caption
+    justify-content: space-around
+
+  .modal__div
+    width: 100%
+
