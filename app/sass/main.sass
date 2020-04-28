@@ -143,19 +143,18 @@ input, textarea, select
   box-sizing: border-box
   width: 100%
   font-family: $default-font
-  padding: 0 21px
+  padding: 0 15px
   color: #262c34
-  font-size: 18px
-  font-weight: 500
+  font-size: 14px
   &::placeholder
     color: #262c34
 
 input
-  height: 52px
+  height: 40px
 
 textarea
-  padding: 18px 21px
-  height: 156px
+  padding: 15px
+  height: 100px
 
 button
   box-shadow: none
@@ -172,13 +171,13 @@ button
   align-items: center
   justify-content: center
   text-align: center
-  font-size: 18px
+  font-size: 16px
   font-weight: bold
   text-transform: uppercase
 
 .btn-accent
   width: 300px
-  height: 52px
+  height: 50px
   color: #fff
   background: #3da1d1
 
@@ -187,7 +186,7 @@ button
 
 .btn-yellow
   width: 300px
-  height: 52px
+  height: 50px
   background: #eebc22
   color: #fff
 
@@ -200,8 +199,10 @@ button
 //header
 header
   background: #2c2c2c
-  padding: 30px 0
+  padding: 15px 0
   width: 100%
+  position: fixed
+  z-index: 10
 
   .container
     justify-content: space-between
@@ -211,7 +212,7 @@ header
 .logo
   display: flex
   flex-direction: column
-  font-size: 48px
+  font-size: 40px
   font-weight: 800
   color: #4ab5d6
   font-stretch: normal
@@ -220,7 +221,7 @@ header
   span
     &:last-child
       color: #267294
-      font-size: 45px
+      font-size: 35px
 
 .header-wrapper
   width: 100%
@@ -232,7 +233,7 @@ header
   display: flex
   color: #fff
   align-items: flex-start
-  font-size: 18px
+  font-size: 14px
   font-weight: 600
 
   a
@@ -244,6 +245,10 @@ header
   .links
     color: #eebc22
     margin: 3px 0 0 0
+    font-size: 14px
+
+.phone
+  font-size: 16px
 
 .header-box__icon
   display: flex
@@ -270,7 +275,7 @@ header
   align-items: flex-start
   justify-content: space-between
   flex-wrap: wrap
-  margin: 0 0 18px
+  margin: 0 0 10px
 
 .menu
   width: 100%
@@ -293,50 +298,82 @@ main
   width: 100%
   position: relative
   background: #2c2c2c
-  padding: 25px 0 0
+  padding: 99px 0 0
 
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    background: url("../img/bg1.jpg") no-repeat center bottom
-      size: cover
-    opacity: .1
-    z-index: 1
+  //&:before
+  //  content: ''
+  //  position: absolute
+  //  left: 0
+  //  top: 0
+  //  width: 100%
+  //  height: 100%
+  //  background: url("../img/bg1.jpg") no-repeat center bottom
+  //    size: cover
+  //  opacity: .1
+  //  z-index: 1
 
   .container
     justify-content: space-between
     align-items: center
+    height: 100%
 
 .main-slider
   width: 100%
-  max-width: 505px
+  position: relative
+  z-index: 1
   color: #fff
+  .slick-slide
+    min-height: 409px
+
+
+.slide-bg
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: .1
+  z-index: 1
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 .main-image
-  width: 498px
+  width: 298px
+  margin: auto 0 0 0
+
+.main-slider__box
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  width: 100%
+  padding: 30px 0 0
+  height: 100%
 
 .main-slider__content
+  max-width: 505px
+  width: 100%
   p
     line-height: 1.29
-    font-size: 24px
+    font-size: 18px
 
 .main-slider__title
-  font-size: 48px
+  font-size: 40px
   font-weight: bold
-  margin: 0 0 42px
+  margin: 0 0 20px
 
 .slick-dots
-  position: relative
-  width: 100%
-  bottom: 0
+  position: absolute
+  bottom: 40px
   display: flex
   align-items: center
   justify-content: flex-start
-  margin: 120px 0 0 0
+  max-width: 1140px
+  left: 50%
+  transform: translate(-50%,0)
+  width: 100%
 
   li
     width: 17px
@@ -362,7 +399,7 @@ main
 
 //section offers
 .offers
-  padding: 100px 0
+  padding: 60px 0
 
   .btn
     margin: 11px auto 13px
@@ -444,24 +481,25 @@ main
 
 //about
 .about
-  margin: 0 0 108px
+  margin: 0 0 60px
 
   .container
     justify-content: space-between
-    align-items: center
+    align-items: flex-end
 
 
 .about-content
-  width: calc(100% - 490px)
+  width: calc(100% - 400px)
   padding: 0 30px 0 0
   color: #262c34
   font-weight: 300
   line-height: 1.44
 
 .about-image
-  width: 490px
-  height: 579px
+  width: 400px
+  height: 430px
   position: relative
+
 
   &:before
     content: ''
@@ -491,7 +529,7 @@ main
   flex-direction: row
   align-items: flex-start
   justify-content: space-between
-  padding: 50px 0 0 0
+  padding: 40px 0 30px
   color: #fff
 
   h3
@@ -557,22 +595,22 @@ main
     background-color: #3da1d1
 
 .tabs-text
-  max-width: 435px
+  max-width: 555px
   line-height: 1.5
   font-weight: 300
 
 .tabs-img
-  width: 610px
+  width: 410px
   display: flex
   align-items: center
   justify-content: center
 
 //company
 .company
-  padding: 128px 0
+  padding: 60px 0
 
   h2
-    margin: 0 auto 78px
+    margin: 0 auto 50px
 
 .company-content
   width: 100%
@@ -594,14 +632,14 @@ main
   h6
     color: #eebc22
     font-weight: bold
-    font-size: 60px
+    font-size: 50px
 
 //advantages
 .advantages
   margin: 0 0 52px
 
   h2
-    margin: 0 auto 62px
+    margin: 0 auto 50px
     max-width: 820px
 
 .advantages-content
@@ -633,7 +671,7 @@ main
 .clients
   position: relative
   background: #191e25
-  padding: 83px 0 108px
+  padding: 60px 0 70px
   &:before
     content: ''
     position: absolute
@@ -653,10 +691,11 @@ main
   align-items: center
   justify-content: center
   margin: 0 auto
-  width: 270px
-  height: 100px
+  width: 200px
+  height: 70px
   box-shadow: 0 13px 10px 0 rgba(0, 0, 0, 0.08)
   background-color: #ffffff
+  padding: 20px
 
 .slick-arrow
   width: 27px
@@ -694,7 +733,7 @@ main
 
 
 .order-image
-  width: 358px
+  width: 300px
   margin: 0 40px 0 0
 
 .order-content
@@ -702,8 +741,7 @@ main
   width: 100%
   margin: 0 0 57px
   p
-    font-size: 24px
-    max-width: 380px
+    font-size: 18px
     font-weight: 500
 
 .form
@@ -731,7 +769,7 @@ iframe
 
 .map
   width: 100%
-  height: 554px
+  height: 400px
   position: absolute
   left: 0
   top: 0
@@ -739,22 +777,22 @@ iframe
 .contacts
   position: relative
   width: 100%
-  padding: 53px 0 126px
+  padding: 50px 0 60px
   h2
     padding: 0
     text-align: left
-    margin: 0 0 30px
+    margin: 0 0 20px
     &:before
       display: none
 
 .box-contacts
-  width: 490px
-  height: 375px
+  width: 405px
+  height: 320px
   background: #fff
-  padding: 45px 35px
+  padding: 35px 25px
   .header-box
     color: #262c34
-    margin: 0 0 20px
+    margin: 0 0 15px
     .links
       text-decoration: none
       color: #eebc22
@@ -765,7 +803,6 @@ iframe
   .btn
     width: 284px
     height: 45px
-    font-size: 20px
   .header-box__icon
     width: 17px
     height: 17px
@@ -786,7 +823,7 @@ footer
       margin: 0
 
 .footer-top
-  padding: 40px 0
+  padding: 20px 0
   .container
     justify-content: space-between
     align-items: center
@@ -800,6 +837,9 @@ footer
   padding: 13px 0
   margin: 0 auto
   color: #fff
+  .container
+    flex-direction: column
+    align-items: center
 
 //modal
 .overlay
@@ -834,8 +874,8 @@ footer
     position: absolute
     right: 20px
     top: 20px
-    width: 20px
-    height: 20px
+    width: 15px
+    height: 15px
     cursor: pointer
     svg
       width: 100%
@@ -852,7 +892,7 @@ footer
     position: relative
     background: #fff
     h2
-      margin: 30px 0
+      margin: 0 0 20px
       font-size: 24px
       text-align: center
       padding: 0 0 10px
@@ -923,6 +963,15 @@ footer
 
 .copyright
   margin: 0 auto
+
+footer
+  .links
+    font-size: 12px
+    margin: 0 auto 10px
+    color: #fff
+    font-weight: 300
+    text-align: center
+
 
 @import "media"
 // Всегда в конце

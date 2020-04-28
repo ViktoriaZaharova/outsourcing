@@ -32,6 +32,9 @@
   .slick-next
     right: 0
 
+  .slick-dots
+    padding: 0 20px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1120px)
   .advantages-box
@@ -46,8 +49,6 @@
     p
       max-width: 165px
 
-  .main-image
-    width: 300px
 
   .slick-dots
     margin: 20px 0 0 0
@@ -76,8 +77,7 @@
   .header-wrapper
     padding: 0 0 0 10px
 
-  .main-slider
-    max-width: 400px
+
 
   .offers-content
     justify-content: space-around
@@ -141,10 +141,19 @@
   .order
     padding: 40px 0 0
 
-  textarea
-    height: 215px
 
 
+  .main-slider .slick-slide
+    min-height: 350px
+
+  .main-slider__content
+    max-width: 430px
+
+  .main-image
+    width: 253px
+
+  .company-box h6
+    font-size: 30px
 
 @media only screen and (max-width : 768px)
   .btn-burger
@@ -186,7 +195,10 @@
 
   .main-image
     width: 232px
-    margin: 0 -99px 0 0
+    position: absolute
+    top: 34%
+    right: -79px
+    margin: 0
 
 
   h2
@@ -261,13 +273,13 @@
       margin: 0 auto 30px
 
   .contacts
-    padding: 284px 0 0
+    padding: 30px 0 0
 
   .box-contacts
     width: 290px
     height: 320px
     padding: 35px 25px
-    margin: 0 auto -50px
+    margin: 0
     .header-box
       font-size: 14px
     .btn
@@ -296,15 +308,20 @@
       &:first-child
         margin: 0 0 30px
 
+  main
+    padding: 79px 0 0
+
 @media only screen and (max-width : 575px)
   .main-slider__content
+    max-width: 350px
     p
       display: none
 
   .main-slider
-    max-width: 200px
     &__title
       margin: 0
+    .slick-slide
+      min-height: 300px
 
   .offers-box
     font-size: 17px
@@ -351,19 +368,19 @@
     flex-direction: column
     align-items: flex-start
 
+  .tabs__caption
+    justify-content: space-around
+
+  .tabs-img
+    margin: 20px auto 0
+
+  .tabs__content .btn
+    left: 50%
+    transform: translate(-50%,0)
+
+
 
 @media only screen and (max-width : 480px)
-  main
-    padding: 33px 0 0
-
-  .main-image
-    position: absolute
-    bottom: 0
-    right: -79px
-    margin: 0
-
-  .main-slider
-    padding: 0 0 200px
 
   footer
     .menu
@@ -382,4 +399,7 @@
 
   .modal__div
     width: 100%
+
+  .main-slider__content
+    max-width: 300px
 
